@@ -1,3 +1,11 @@
+// CORRECTED: these four signal constants were referenced below but never
+// defined anywhere in the original file — compile error as written.
+// Values are placeholders; adjust to match your actual signal encoding.
+#define LOW_BATTERY_SIGNAL 1
+#define FLOW_LINE_PRESSURE_HIGH_SIGNAL 2
+#define FLOW_LINE_PRESSURE_LOW_SIGNAL 3
+#define INPUT_SIGNAL_FROM_SCADA_NETWORK 4
+
 void setup() {
   Serial.begin(9600);
   pinMode(LED_BUILTIN, OUTPUT);
